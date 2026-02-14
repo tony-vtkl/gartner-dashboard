@@ -242,6 +242,8 @@
             <button class="nav-tab" onclick="showSection('analysis')">🔬 Research Analysis</button>
             <button class="nav-tab" onclick="showSection('talking-points')">🎙️ Talking Points</button>
             <button class="nav-tab" onclick="showSection('board')">📋 Working Board</button>
+            <button class="nav-tab" onclick="showSection('whitepapers')">📝 White Papers</button>
+            <button class="nav-tab" onclick="showSection('analyst')">🎯 Analyst Strategy</button>
             <button class="nav-tab" onclick="showSection('requirements')">📊 Bus Analyst Requirements</button>
         </nav>
 
@@ -253,8 +255,72 @@
             <p style="color:#888; font-size:0.85rem; margin-bottom:1.25rem;">From Feb 3 call with Jake Whitten (Gartner Account Manager) — what each stakeholder needs from Gartner engagement</p>
             <div style="margin-bottom:1rem;"><button class="btn btn-primary" onclick="openReqModal()">+ Add Requirement</button></div>
 
+            <!-- Enhancement 4: Today / Future / Leverage Points -->
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem;">
+                <div style="background:rgba(46,213,115,0.08); border:1px solid rgba(46,213,115,0.3); border-radius:12px; padding:1.25rem;">
+                    <h3 style="color:#2ed573; margin-bottom:0.75rem;">📍 TODAY</h3>
+                    <div style="color:#aaa; font-size:0.85rem; line-height:1.7;">
+                        <ul style="margin-left:1.2rem;">
+                            <li>Graduated autonomy model proven in SOC workflows</li>
+                            <li>Supervised remediation with humans in the loop</li>
+                            <li>Enterprise security AI with governance built in</li>
+                            <li>Active Gartner engagement via Jake Whitten</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background:rgba(102,126,234,0.08); border:1px solid rgba(102,126,234,0.3); border-radius:12px; padding:1.25rem;">
+                    <h3 style="color:#667eea; margin-bottom:0.75rem;">🚀 FUTURE</h3>
+                    <div style="color:#aaa; font-size:0.85rem; line-height:1.7;">
+                        <ul style="margin-left:1.2rem;">
+                            <li>Multi-agent orchestration across full security stack</li>
+                            <li>AI beyond SOC: IAM, XDR, MDR, compliance</li>
+                            <li>Gartner MQ / Hype Cycle inclusion</li>
+                            <li>CISO community leadership & conference presence</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background:rgba(245,87,108,0.08); border:1px solid rgba(245,87,108,0.3); border-radius:12px; padding:1.25rem;">
+                    <h3 style="color:#f5576c; margin-bottom:0.75rem;">⚡ LEVERAGE POINTS</h3>
+                    <div style="color:#aaa; font-size:0.85rem; line-height:1.7;">
+                        <ul style="margin-left:1.2rem;">
+                            <li>AI in "Trough of Disillusionment" — heroes emerge now</li>
+                            <li>74% of CIOs losing money on AI — Kindo's ROI story wins</li>
+                            <li>62% say neither AI nor people are ready — Kindo solves both</li>
+                            <li>Governance must be product-built, not services-bolted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div class="callout" style="margin-bottom:1.5rem;">
                 <strong>⏰ Timeline:</strong> Get on analyst radar in Feb–March, before RSA.
+            </div>
+
+            <!-- Enhancement 3: Marketing Messages -->
+            <div style="background:rgba(162,155,254,0.08); border:1px solid rgba(162,155,254,0.3); border-radius:12px; padding:1.25rem; margin-bottom:1.5rem;">
+                <h3 style="color:#a29bfe; margin-bottom:0.75rem;">📣 Extracted Marketing Messages</h3>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:0.75rem;">
+                    <div style="background:rgba(0,0,0,0.2); border-radius:8px; padding:0.9rem;">
+                        <div style="color:#fff; font-weight:600; margin-bottom:0.3rem;">"Graduated Autonomy"</div>
+                        <div style="color:#aaa; font-size:0.83rem;">Earn trust through proven AI accuracy</div>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.2); border-radius:8px; padding:0.9rem;">
+                        <div style="color:#fff; font-weight:600; margin-bottom:0.3rem;">"Supervised Remediation"</div>
+                        <div style="color:#aaa; font-size:0.83rem;">Humans in the loop, always</div>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.2); border-radius:8px; padding:0.9rem;">
+                        <div style="color:#fff; font-weight:600; margin-bottom:0.3rem;">"Governance by Design"</div>
+                        <div style="color:#aaa; font-size:0.83rem;">Built-in, not bolted on</div>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.2); border-radius:8px; padding:0.9rem;">
+                        <div style="color:#fff; font-weight:600; margin-bottom:0.3rem;">"Security-Specific AI Readiness"</div>
+                        <div style="color:#aaa; font-size:0.83rem;">Purpose-built for security workflows</div>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.2); border-radius:8px; padding:0.9rem;">
+                        <div style="color:#fff; font-weight:600; margin-bottom:0.3rem;">"Embedded Change Management"</div>
+                        <div style="color:#aaa; font-size:0.83rem;">Adoption is the product, not an afterthought</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Ron -->
@@ -769,6 +835,143 @@
         </div>
     </div>
 
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SECTION 5: WHITE PAPER TRACKING            -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section" id="sec-whitepapers">
+            <h2>📝 White Paper Tracking</h2>
+            <p style="color:#888; font-size:0.85rem; margin-bottom:1.25rem;">Editor: Alec • Budget: &lt;$500 each • Target: Thought leadership for analyst briefings &amp; RSA</p>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(400px,1fr)); gap:1rem;">
+                <div class="analysis-card">
+                    <h3>📄 AI Security Governance: The Case for Graduated Autonomy</h3>
+                    <div class="analysis-body">
+                        <p><strong>Status:</strong> Draft v3 in review</p>
+                        <p><strong>Editor:</strong> Alec &nbsp;|&nbsp; <strong>Budget:</strong> $450</p>
+                        <div style="margin:0.75rem 0;">
+                            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#888; margin-bottom:0.3rem;"><span>Progress</span><span>75%</span></div>
+                            <div style="background:rgba(255,255,255,0.1); border-radius:6px; height:10px; overflow:hidden;">
+                                <div style="width:75%; height:100%; background:linear-gradient(90deg,#667eea,#764ba2); border-radius:6px;"></div>
+                            </div>
+                        </div>
+                        <p style="font-size:0.82rem; color:#999;">Thesis: Enterprises need configurable autonomy levels — not binary on/off AI. Maps to Gartner's "productize levels of autonomy" guidance.</p>
+                    </div>
+                </div>
+                <div class="analysis-card">
+                    <h3>📄 Supervised Remediation: Keeping Humans in the Security Loop</h3>
+                    <div class="analysis-body">
+                        <p><strong>Status:</strong> Research complete, writing in progress</p>
+                        <p><strong>Editor:</strong> Alec &nbsp;|&nbsp; <strong>Budget:</strong> $475</p>
+                        <div style="margin:0.75rem 0;">
+                            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#888; margin-bottom:0.3rem;"><span>Progress</span><span>72%</span></div>
+                            <div style="background:rgba(255,255,255,0.1); border-radius:6px; height:10px; overflow:hidden;">
+                                <div style="width:72%; height:100%; background:linear-gradient(90deg,#2ed573,#1abc9c); border-radius:6px;"></div>
+                            </div>
+                        </div>
+                        <p style="font-size:0.82rem; color:#999;">Thesis: AI-driven security without human oversight creates new attack surfaces. Supervised remediation is the bridge between automation and accountability.</p>
+                    </div>
+                </div>
+                <div class="analysis-card">
+                    <h3>📄 Change Management as Product: Why AI Adoption Fails Without It</h3>
+                    <div class="analysis-body">
+                        <p><strong>Status:</strong> Outline + first draft</p>
+                        <p><strong>Editor:</strong> Alec &nbsp;|&nbsp; <strong>Budget:</strong> $425</p>
+                        <div style="margin:0.75rem 0;">
+                            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#888; margin-bottom:0.3rem;"><span>Progress</span><span>78%</span></div>
+                            <div style="background:rgba(255,255,255,0.1); border-radius:6px; height:10px; overflow:hidden;">
+                                <div style="width:78%; height:100%; background:linear-gradient(90deg,#f5576c,#ff6348); border-radius:6px;"></div>
+                            </div>
+                        </div>
+                        <p style="font-size:0.82rem; color:#999;">Thesis: 25% of vendors cite change management as the #1 blocker. Products that embed adoption into the UX — not bolt it on as services — win.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SECTION 6: ANALYST ENGAGEMENT STRATEGY     -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section" id="sec-analyst">
+            <h2>🎯 Analyst Engagement Strategy</h2>
+            <p style="color:#888; font-size:0.85rem; margin-bottom:1.25rem;">Timeline: Feb–March analyst radar → RSA Conference preparation</p>
+
+            <div class="callout" style="margin-bottom:1.5rem;">
+                <strong>🎯 Goal:</strong> Get Kindo on Gartner analyst radar before RSA. Secure at least one analyst briefing and position for Hype Cycle / Cool Vendor consideration.
+            </div>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(460px,1fr)); gap:1rem; margin-bottom:1.5rem;">
+                <div class="analysis-card">
+                    <h3>📅 Engagement Timeline</h3>
+                    <div class="analysis-body">
+                        <ul>
+                            <li><strong>Feb 2026:</strong> Finalize white papers, prepare briefing deck</li>
+                            <li><strong>Early Mar:</strong> Submit analyst briefing requests via Jake Whitten</li>
+                            <li><strong>Mid Mar:</strong> Conduct first analyst briefing (security AI focus)</li>
+                            <li><strong>Late Mar:</strong> Follow-up inquiry calls with adjacent analysts</li>
+                            <li><strong>Apr:</strong> RSA Conference — analyst meetings, booth presence</li>
+                            <li><strong>Post-RSA:</strong> Submit for Cool Vendor / Hype Cycle inclusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis-card">
+                    <h3>🎯 Target Analysts to Brief</h3>
+                    <div class="analysis-body">
+                        <p style="margin-bottom:0.5rem;"><strong>Security & Risk Management:</strong></p>
+                        <ul>
+                            <li>Analysts covering AI in security operations (SOC, SOAR)</li>
+                            <li>Analysts covering security platform convergence</li>
+                            <li>CISO advisory practice leads</li>
+                        </ul>
+                        <p style="margin-top:0.75rem; margin-bottom:0.5rem;"><strong>Emerging Technology:</strong></p>
+                        <ul>
+                            <li>Agentic AI and autonomous systems analysts</li>
+                            <li>AI governance and trust framework researchers</li>
+                            <li>Hype Cycle authors for AI in security</li>
+                        </ul>
+                        <p class="no-results" style="margin-top:0.75rem;">⚠️ Request specific analyst names from Jake Whitten — Gartner account managers facilitate introductions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-card" style="margin-bottom:1.5rem;">
+                <h3>✅ RSA Conference Preparation Checklist</h3>
+                <div class="analysis-body">
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem;">
+                        <div>
+                            <p style="color:#fff; font-weight:600; margin-bottom:0.5rem;">📋 Content & Materials</p>
+                            <ul>
+                                <li>☐ Analyst briefing deck (20 min, data-heavy)</li>
+                                <li>☐ White papers printed + digital</li>
+                                <li>☐ One-pager: Kindo vs. competitors</li>
+                                <li>☐ Customer case study (with permission)</li>
+                                <li>☐ Product demo environment ready</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="color:#fff; font-weight:600; margin-bottom:0.5rem;">🤝 Meetings & Logistics</p>
+                            <ul>
+                                <li>☐ Schedule analyst 1:1s through Jake</li>
+                                <li>☐ Book RSA meeting rooms / booth</li>
+                                <li>☐ Prep Ron, Tony, Ken with talking points</li>
+                                <li>☐ Identify target CISOs attending RSA</li>
+                                <li>☐ Post-RSA follow-up email templates</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="color:#fff; font-weight:600; margin-bottom:0.5rem;">📊 Key Milestones</p>
+                            <ul>
+                                <li>☐ <strong>Feb–Mar:</strong> Get on analyst radar</li>
+                                <li>☐ <strong>Mar:</strong> First analyst briefing completed</li>
+                                <li>☐ <strong>Pre-RSA:</strong> All materials finalized</li>
+                                <li>☐ <strong>RSA:</strong> 3+ analyst meetings booked</li>
+                                <li>☐ <strong>Post-RSA:</strong> Cool Vendor submission</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- Requirement Modal -->
     <div class="modal" id="req-modal">
         <div class="modal-content">
@@ -836,8 +1039,10 @@
         function showSection(name) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-            document.getElementById('sec-' + name).classList.add('active');
-            event.target.classList.add('active');
+            const sec = document.getElementById('sec-' + name);
+            if (sec) sec.classList.add('active');
+            // Find the tab that called this
+            if (event && event.target) event.target.classList.add('active');
         }
 
         // ── Supabase / Kanban ──
